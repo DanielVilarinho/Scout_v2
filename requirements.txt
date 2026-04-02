@@ -1,7 +1,7 @@
 dash==3.3.0
 plotly==6.5.0
 dash-bootstrap-components==2.0.4
-sklearn
+scikit-learn
 pandas==2.3.3
 gunicorn
 numpy==2.3.5
