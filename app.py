@@ -13,7 +13,7 @@ app = Dash(
     suppress_callback_exceptions=True,
     external_stylesheets=[dbc.themes.FLATLY],
 )
-
+server = app.server
 app.title = "Player Stats Dashboard"
 
 GLOBAL_CSS = """
