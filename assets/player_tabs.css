@@ -1,0 +1,56 @@
+/* ===== Wrapper geral (centraliza tudo) ===== */
+.player-tabs-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===== Grupo dos botões ===== */
+.player-tabs-group {
+  display: flex !important;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;              /* ✅ espaço entre os tabs */
+}
+
+/* ===== Botão base ===== */
+.player-tab-btn {
+  border-radius: 999px !important;
+  font-weight: 700 !important;
+  padding: 10px 18px !important;
+
+  border: 1px solid rgba(0,0,0,0.12) !important;
+  background: #ffffff !important;
+
+  color: rgba(0,0,0,0.85) !important;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+
+  transition: 
+    background 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.15s ease;
+}
+
+/* garante que texto interno não herde branco */
+.player-tab-btn * {
+  color: inherit !important;
+}
+
+/* ===== Hover ===== */
+.player-tab-btn:hover {
+  background: rgba(13,110,253,0.06) !important;
+  border-color: rgba(13,110,253,0.35) !important;
+  color: #0d6efd !important;
+  transform: translateY(-1px);
+}
+
+/* ===== Ativo ===== */
+.player-tab-btn.active {
+  background: rgba(13,110,253,0.14) !important;
+  border-color: rgba(13,110,253,0.45) !important;
+  color: #0d6efd !important;
+
+  box-shadow: 0 2px 6px rgba(13,110,253,0.25);
+}
