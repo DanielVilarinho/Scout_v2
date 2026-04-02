@@ -17,7 +17,7 @@ env/
 # =========================
 # Environment variables
 # =========================
-.env
+#.env
 
 # =========================
 # Jupyter / Notebooks
@@ -51,7 +51,7 @@ temp/
 # =========================
 # Data files (opcional)
 # =========================
-*.csv
+#*.csv
 *.parquet
 *.feather
 
